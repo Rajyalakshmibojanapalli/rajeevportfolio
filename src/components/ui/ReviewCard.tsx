@@ -106,13 +106,19 @@ export default function ReviewCard({ name, role, rating, text }: Review) {
       </div>
 
       {/* Review Text with decorative quotes */}
-      <div className="relative w-full mt-1">
-        <span className="absolute -top-2 -left-1 text-[#FD853A]/20 text-4xl sm:text-5xl font-serif">"</span>
-        <p className="w-full text-sm sm:text-base lg:text-lg xl:text-xl text-[#F9FAFB] leading-relaxed pl-3 pr-3">
-          {text}
-        </p>
-        <span className="absolute -bottom-5 right-0 text-[#FD853A]/20 text-4xl sm:text-5xl font-serif">"</span>
-      </div>
+      {/* Review Text with decorative quotes */}
+<div className="relative w-full mt-1">
+  <span className="absolute -top-2 -left-1 text-[#FD853A]/20 text-4xl sm:text-5xl font-serif">
+    &quot;
+  </span>
+  <p className="w-full text-sm sm:text-base lg:text-lg xl:text-xl text-[#F9FAFB] leading-relaxed pl-3 pr-3">
+    {text}
+  </p>
+  <span className="absolute -bottom-5 right-0 text-[#FD853A]/20 text-4xl sm:text-5xl font-serif">
+    &quot;
+  </span>
+</div>
+
     </div>
   );
 }
