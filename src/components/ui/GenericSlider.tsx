@@ -131,7 +131,13 @@ export function GenericSlider<T extends AllowedCard>({
               className={`${isReview ? '!w-full sm:!w-[90%] md:!w-[784px]' : '!flex justify-center'}`}
             >
               {cardType === 'hover' && 'title' in item && 'imageSrc' in item && (
-                <ServicesCard title={item.title} imageSrc={item.imageSrc} priority={index === 0} />
+                <ServicesCard
+                  title={item.title}
+                  imageSrc={item.imageSrc}
+                  description={""}
+                  priority={index === 0}
+                />
+
               )}
               {cardType === 'portfolio' && 'image' in item && 'href' in item && 'desc' in item && (
                 <PortfolioCard
