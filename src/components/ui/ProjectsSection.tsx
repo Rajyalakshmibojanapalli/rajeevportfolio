@@ -22,7 +22,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
       
       {/* Projects Grid */}
       <div className="projectssec grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <div 
             key={project.id} 
             style={{ cursor: 'pointer' }} 
@@ -46,10 +46,12 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               </>
             ) : (
               <div className="relative w-full h-full">
-                <img
+                <Image
                   src={project.src}
                   alt={project.alt || project.title}
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-6 left-6 right-6">
