@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Star } from "lucide-react";
 import OrangeButton from "@/components/ui/OrangeButton";
 import ArrowButton from "@/components/ui/ArrowButton";
-import { experiences, buttons, iconAndText, skills, blogs, portfolioData, cardData, reviews,projects } from '../data/data';
+import { experiences, buttons, iconAndText, skills, portfolioData, cardData, reviews,projects } from '../data/data';
 import { GenericSlider } from "@/components/ui/GenericSlider";
 import ClientOnly from "@/components/ui/ClientOnly";
 import ProjectsSection from '@/components/ui/ProjectsSection';
