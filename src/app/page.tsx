@@ -5,10 +5,10 @@ import Image from "next/image";
 import { Star } from "lucide-react";
 import OrangeButton from "@/components/ui/OrangeButton";
 import ArrowButton from "@/components/ui/ArrowButton";
-import { experiences, buttons, iconAndText, skills, blogs, portfolioData, cardData, reviews } from '../data/data';
+import { experiences, buttons, iconAndText, skills, blogs, portfolioData, cardData, reviews,projects } from '../data/data';
 import { GenericSlider } from "@/components/ui/GenericSlider";
 import ClientOnly from "@/components/ui/ClientOnly";
-
+import ProjectsSection from '@/components/ui/ProjectsSection';
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full bg-white py-10 flex flex-col items-center justify-start">
@@ -522,9 +522,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      <ProjectsSection projects={projects} />
       {/* Blog */}
-      <div className="flex flex-col w-fll h-fit items-center gap-12 px-[71px] py-[97px]">
+      {/* <div className="flex flex-col w-fll h-fit items-center gap-12 px-[71px] py-[97px]">
         <div className="w-[1298px] h-[126px] flex flex-col lg:flex-row items-center justify-between gap-6 mb-6 md:mb-0">
           <h1 className="text-[#344054] w-fit md:min-w-[215px] h-full font-bold text-4xl md:text-5xl">From my blog post</h1>
           <OrangeButton title="See All" className="w-[300px] md:w-fit" />
@@ -535,7 +535,7 @@ export default function Home() {
           heightClass=""
           cardType="blog"
         />
-      </div>
+      </div> */}
 
     </div>
   );

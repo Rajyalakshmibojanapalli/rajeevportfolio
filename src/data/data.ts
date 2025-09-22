@@ -39,9 +39,55 @@ export interface CardData {
   title: string;
   imageSrc: string;
 }
+export interface Project {
+  id: number;
+  type: 'iframe' | 'image';
+  src: string;
+  title: string;
+  alt?: string;
+}
 
 
-
+export const projects: Project[] = [
+  { 
+    id: 1, 
+    type: 'iframe', 
+    src: 'https://www.hashproacademy.com/', 
+    title: 'HashPro Academy - Professional Coding Courses' 
+  },
+  { 
+    id: 2, 
+    type: 'iframe', 
+    src: 'https://www.bhookr.com/', 
+    title: 'Bhookr - Restaurant Booking Platform' 
+  },
+  { 
+    id: 3, 
+    type: 'iframe', 
+    src: 'https://www.rawtalks.in/', 
+    title: 'Raw Talks - Unfiltered Conversations' 
+  },
+  { 
+    id: 4, 
+    type: 'iframe', 
+    src: 'https://www.anssafetynets.com/', 
+    title: 'ANS Safety Nets - Industrial Safety Solutions' 
+  },
+  { 
+    id: 5, 
+    type: 'image', 
+    src: 'https://veereshnaik.vercel.app/static/media/tonesfashion.4b35aa49954d5ad84e15.png', 
+    title: 'Tones Fashion', 
+    alt: 'Tones Fashion E-commerce Platform' 
+  },
+  { 
+    id: 6, 
+    type: 'image', 
+    src: 'https://veereshnaik.vercel.app/static/media/sushubabies.15c185f2f26d77e54e72.png', 
+    title: 'Sushu Babies', 
+    alt: 'Sushu Babies - Children\'s Clothing Line' 
+  }
+];
 export const experiences: Experience[] = [
   {
     company: "HashPro Academy, Mumbai",
@@ -191,32 +237,6 @@ export const portfolioData: PortfolioItem[] = [
     desc: "Created patient-focused content strategy showcasing advanced microscopic and digital dentistry techniques. Developed 24 educational blog posts, 6 patient case studies, and 4 video testimonials, resulting in 86% increase in organic traffic and 35% improvement in lead quality.",
   },
 ];
-// export const portfolioData: PortfolioItem[] = [
-//   {
-//     image: "/Frame 26.svg",
-//     title: "Lirante 1",
-//     href: "/project-1",
-//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.",
-//   },
-//   {
-//     image: "/Frame 26.svg",
-//     title: "Lirante 2",
-//     href: "/project-2",
-//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.",
-//   },
-//   {
-//     image: "/Frame 26.svg",
-//     title: "Lirante 3",
-//     href: "/project-3",
-//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.",
-//   },
-//   {
-//     image: "/Frame 26.svg",
-//     title: "Lirante 4",
-//     href: "/project-4",
-//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.",
-//   },
-// ];
 export const reviews: Review[] = [
   {
     name: "Dr. Jaydev",
@@ -267,41 +287,6 @@ export const reviews: Review[] = [
     text: "The SEO work and targeted ads transformed our property listings' visibility. Lead quality improved dramatically, and conversion rates increased by over 30%. Exceptional digital marketing expertise!",
   }
 ];
-// export const reviews: Review[] = [
-//   {
-//     name: "Mahesh Pokale",
-//     role: "Web Designer",
-//     rating: 5,
-//     text: "Consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.",
-//   },
-//   {
-//     name: "Sarah Johnson",
-//     role: "Product Manager",
-//     rating: 4,
-//     text: "Excellent work! Very professional and meets deadlines consistently. Highly recommended for design and development projects.",
-//   },
-//   {
-//     name: "John Doe",
-//     role: "UI/UX Lead",
-//     rating: 5,
-//     text: "Top quality design and coding. Strong attention to detail and highly collaborative throughout the project lifecycle.",
-//   },
-//   {
-//     name: "Aryan Sharma",
-//     role: "Software Engineer",
-//     rating: 4,
-//     text: "Innovative approach, clean design, and prompt delivery. Will work together again for sure!",
-//   },
-// ];
-
-// export const cardData: CardData[] = [
-//   { title: "Digital Marketing Strategy & Execution", imageSrc: "/Rectangle 7.svg" },
-//   { title: "Performance Marketing ", imageSrc: "/Rectangle 7.svg" },
-//   { title: "Lead Generation & Conversion Optimization", imageSrc: "/Rectangle 7.svg" },
-//   { title: "Social Media Marketing", imageSrc: "/Rectangle 7.svg" },
-//   { title: "SEO & Content Marketing", imageSrc: "/Rectangle 7.svg" },
-//   { title: "Brand Building & Growth Marketing", imageSrc: "/Rectangle 7.svg" },
-// ];
 
 export const cardData: CardData[] = [
   {

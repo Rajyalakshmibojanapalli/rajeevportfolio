@@ -51,12 +51,12 @@ export function GenericSlider<T extends AllowedCard>({
             {data.slice(0, 3).map((item, index) => (
               <div key={index} className="flex-shrink-0 w-full max-w-sm">
                 {cardType === 'hover' && 'title' in item && 'imageSrc' in item && (
-                  <ServicesCard 
-  title={item.title} 
-  imageSrc={item.imageSrc} 
-  description={""} 
-  priority={index === 0} 
-/>
+                  <ServicesCard
+                    title={item.title}
+                    imageSrc={item.imageSrc}
+                    description={""}
+                    priority={index === 0}
+                  />
                 )}
                 {cardType === 'portfolio' && 'image' in item && 'href' in item && 'desc' in item && (
                   <PortfolioCard
